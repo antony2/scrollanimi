@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  margin-top: 100px;
+  padding-top: 100px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.leftimage > a > img {
+  border-radius: 50px;
+  height: 70px;
+  width: 70px;
+}
+
+.searchimage {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 85px;
+  left: 12px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+
+  left: 80%;
+  margin-left: -60px;
+  top: 28px;
+}
+
+.tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.leftlines {
+  display: block;
+}
+
+.rightlines {
+  display: block;
+  background: transparent;
+}
+
+.imagetext {
+  display: block;
+  position: absolute;
+  left: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: -5px;
+  font-size: 18px;
+  color: blue;
+}
+
+.leftimageposition {
+  position: absolute;
+  left: 450px;
+  margin-top: -90px;
+}
+
+.leftcenterposition {
+  position: absolute;
+  left: 182px;
+  margin-top: 55px;
+}
